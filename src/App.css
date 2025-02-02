@@ -1,0 +1,155 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar-brand{
+  font-size: 1.5rem;
+}
+.navbar-nav .nav-link {
+  padding: 10px 15px; 
+  font-size: 16px; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+  transition: all 0.3s ease-in-out; 
+}
+
+.navbar-nav .nav-link:hover {
+  color: #C19A6B ; /* Text color changes to white */
+}
+
+.navbar {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+  width: 100%; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.098);
+}
+
+.btn-login{
+  background-color: #C19A6B;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 10px, 15px;
+  margin-right: 10px;
+}
+
+.btn-login:hover{
+  background-color: #6C4F3D; /* Lighter gold on hover */
+  border-color: #6C4F3D;
+}
+
+.btn-signup {
+  background-color: #C19A6B; /* Lighter brown for SignUp */
+  border-color: #C19A6B; /* Lighter border */
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding: 10px, 15px;
+}
+
+.btn-signup:hover {
+  background-color: #8A5E3E; /* Lighter brown on hover */
+  border-color: #8A5E3E; /* Lighter border on hover */
+}
+
+.navbar-logo {
+  width: 70px;  /* Set logo width */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between the logo and "Pawfet" text */
+  vertical-align: middle; /* Align logo vertically with the text */
+}
+
+.card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  height: 400px; /* Set fixed height for cards */
+  display: flex;
+  flex-direction: column; /* To ensure content stretches evenly */
+}
+
+.card-body {
+  flex-grow: 1; /* Ensures the text fills the remaining space and balances the card height */
+}
+
+.card-img-top {
+  height: 200px; /* Ensures the image has a fixed height */
+  object-fit: cover; /* Ensures the image maintains aspect ratio */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+
+
+body {
+  padding-top: 56px; 
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
