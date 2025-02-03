@@ -75,6 +75,50 @@ body, html {
   vertical-align: middle; /* Align logo vertically with the text */
 }
 
+.btn-adopt{
+  color: white;
+  border-radius: 10px;
+  letter-spacing: 1.5px;
+  padding: 10px, 15px;
+  font-size: 18px;
+  height: 50px;
+  width: auto;
+  background-color:#8A5E3E ;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.btn-adopt:hover{
+  color: #F0E1C6;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.articles-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.article-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+}
+
+.article-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.article-card p {
+  color: #666;
+}
+
+
 .card {
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -109,6 +153,26 @@ body, html {
 
 body {
   padding-top: 56px; 
+}
+
+.carousel {
+  margin-top: 800px; /* Adjust as needed */
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+  border: none;
+  letter-spacing: 1.5px;
+}
+
+.carousel-item img {
+  width: 100%;  /* Make the images fill the container */
+  height: 1200px; /* Set a fixed height */
+  object-fit: contain;
+  object-position: top; /* Crop images to fill the space while maintaining aspect ratio */
 }
 
 #root {
